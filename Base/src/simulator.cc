@@ -3,12 +3,14 @@
 // Grado en Ingeniería Informática
 // Asignatura: Algoritmos y Estructuras de Datos Avanzadas
 // Curso: 2º
-// Práctica 4: Búsqueda por dispersión
+// Práctica 4: Implementación de la tabla hash
 //
 // Autor: Ignacio Andres Rivera Barrientos
 // Correo: alu0101675053@ull.edu.es
 // Fecha: 24/03/2026
-// Archivo simulator.cc: implementation of the hash table simulator.
+// Archivo simulator.cc: implementación de la clase Simulator encargada de
+//                       procesar argumentos, construir la tabla hash y
+//                       ejecutar el menú interactivo.
 
 #include "simulator.h"
 
@@ -18,8 +20,8 @@
 
 /**
  * @brief Builds the simulator from command line arguments.
- * @param argc Number of arguments.
- * @param argv Vector of arguments.
+ * @param argc Number of command line arguments.
+ * @param argv Command line arguments.
  */
 Simulator::Simulator(int argc, char* argv[])
     : table_size_(0),
@@ -45,8 +47,8 @@ Simulator::~Simulator() {
 
 /**
  * @brief Parses and validates command line arguments.
- * @param argc Number of arguments.
- * @param argv Vector of arguments.
+ * @param argc Number of command line arguments.
+ * @param argv Command line arguments.
  * @throws InvalidArgumentException if an argument is invalid.
  * @throws MissingArgumentException if required parameters are missing.
  */
@@ -112,7 +114,7 @@ void Simulator::ParseArguments(int argc, char* argv[]) {
 }
 
 /**
- * @brief Creates the configured hash table and its functions.
+ * @brief Creates the configured hash table and its associated functions.
  * @throws InvalidArgumentException if any configuration code is invalid.
  */
 void Simulator::BuildHashTable() {
@@ -203,8 +205,11 @@ void Simulator::ShowMenu() const {
 }
 
 /**
- * @brief Handles insertion of a key.
- * @throws InvalidOptionException if the entered NIF is invalid.
+ * @brief Handles insertion of a key entered by the user.
+ *
+ * @details
+ * If the input is not numeric or does not have 8 digits,
+ * an error message is shown and control returns to the menu.
  */
 void Simulator::HandleInsert() {
   long value;
@@ -237,8 +242,11 @@ void Simulator::HandleInsert() {
 }
 
 /**
- * @brief Handles search of a key.
- * @throws InvalidOptionException if the entered NIF is invalid.
+ * @brief Handles search of a key entered by the user.
+ *
+ * @details
+ * If the input is not numeric or does not have 8 digits,
+ * an error message is shown and control returns to the menu.
  */
 void Simulator::HandleSearch() {
   long value;
@@ -271,7 +279,7 @@ void Simulator::HandleSearch() {
 }
 
 /**
- * @brief Prints the current hash table.
+ * @brief Prints the current state of the hash table.
  */
 void Simulator::HandlePrint() const {
   std::cout << "--- Estado actual de la tabla ---\n";
@@ -280,6 +288,10 @@ void Simulator::HandlePrint() const {
 
 /**
  * @brief Runs the interactive simulator menu.
+ *
+ * @details
+ * Repeatedly shows the menu, reads the selected option
+ * and executes the requested operation until the user exits.
  */
 void Simulator::Run() {
   int option = -1;

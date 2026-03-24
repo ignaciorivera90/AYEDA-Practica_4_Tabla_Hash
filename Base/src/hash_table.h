@@ -1,3 +1,17 @@
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Algoritmos y Estructuras de Datos Avanzadas
+// Curso: 2º
+// Práctica 4: Implementación de la tabla hash
+//
+// Autor: Ignacio Andres Rivera Barrientos
+// Correo: alu0101675053@ull.edu.es
+// Fecha: 24/03/2026
+// Archivo hash_table.h: definición de la clase HashTable que implementa
+//                       una tabla hash genérica con dispersión abierta
+//                       y cerrada mediante plantillas.
+
 #ifndef HASH_TABLE_H_
 #define HASH_TABLE_H_
 

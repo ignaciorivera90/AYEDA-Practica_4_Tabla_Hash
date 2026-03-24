@@ -1,3 +1,16 @@
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Algoritmos y Estructuras de Datos Avanzadas
+// Curso: 2º
+// Práctica 4: Implementación de la tabla hash
+//
+// Autor: Ignacio Andres Rivera Barrientos
+// Correo: alu0101675053@ull.edu.es
+// Fecha: 24/03/2026
+// Archivo exploration.h: definición de las funciones de exploración utilizadas
+//                       en la dispersión cerrada de la tabla hash.
+
 #ifndef EXPLORATION_H_
 #define EXPLORATION_H_
 

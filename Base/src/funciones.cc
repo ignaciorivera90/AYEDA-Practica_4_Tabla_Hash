@@ -1,3 +1,16 @@
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Algoritmos y Estructuras de Datos Avanzadas
+// Curso: 2º
+// Práctica 4: Implementación de la tabla hash
+//
+// Autor: Ignacio Andres Rivera Barrientos
+// Correo: alu0101675053@ull.edu.es
+// Fecha: 24/03/2026
+// Archivo funciones.cc: implementación de la función Usage para validar
+//                      argumentos de entrada y mostrar ayuda.
+
 #include "funciones.h"
 
 #include <cstdlib>
@@ -6,6 +19,12 @@
 
 #include "exceptions.h"
 
+/**
+ * @brief Validates command line arguments and shows help if requested.
+ * @param argc Number of command line arguments.
+ * @param argv Command line arguments.
+ * @throws MissingArgumentException if mandatory arguments are missing.
+ */
 void Usage(int argc, char* argv[]) {
   if (argc >= 2 && std::string(argv[1]) == "--help") {
     std::cout

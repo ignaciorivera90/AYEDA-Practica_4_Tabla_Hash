@@ -1,3 +1,17 @@
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Algoritmos y Estructuras de Datos Avanzadas
+// Curso: 2º
+// Práctica 4: Implementación de la tabla hash
+//
+// Autor: Ignacio Andres Rivera Barrientos
+// Correo: alu0101675053@ull.edu.es
+// Fecha: 24/03/2026
+// Archivo sequence.h: definición de las clases Sequence, dynamicSequence y
+//                    staticSequence que representan los contenedores de
+//                    almacenamiento de claves en la tabla hash.
+
 #ifndef SEQUENCE_H_
 #define SEQUENCE_H_
 

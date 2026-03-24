@@ -1,3 +1,16 @@
+// Universidad de La Laguna
+// Escuela Superior de Ingeniería y Tecnología
+// Grado en Ingeniería Informática
+// Asignatura: Algoritmos y Estructuras de Datos Avanzadas
+// Curso: 2º
+// Práctica 4: Implementación de la tabla hash
+//
+// Autor: Ignacio Andres Rivera Barrientos
+// Correo: alu0101675053@ull.edu.es
+// Fecha: 24/03/2026
+// Archivo exceptions.h: definición de las clases de excepción utilizadas
+//                      para el control de errores en la aplicación.
+
 #ifndef EXCEPTIONS_H_
 #define EXCEPTIONS_H_
 
